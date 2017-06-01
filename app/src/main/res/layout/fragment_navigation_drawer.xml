@@ -1,0 +1,173 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#EEEEEE">
+
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom">
+
+        <ImageView
+            android:id="@+id/drawer_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:clickable="true"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_gravity="top"
+            android:src="@drawable/drawer_header" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="#EEEEEE">
+        <ImageView
+            android:id="@+id/drawer_level_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="#EEEEEE"
+            android:src="@drawable/drawer_level"/>
+        <TextView
+            android:id="@+id/drawer_level_have"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="#596A94"
+            android:textColor="#FFFFFF"
+            android:text="                              "/>
+        <TextView
+            android:id="@+id/drawer_level_togo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FAFAFA"
+            android:textColor="#FFFFFF"
+            android:text="            "/>
+    </LinearLayout>
+
+    <LinearLayout
+    android:id="@+id/drawer_stalkers"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:gravity="center"
+    android:background="#EEEEEE">
+    <ImageView
+        android:id="@+id/drawer_stalkers_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:background="#EEEEEE"
+        android:src="@drawable/drawer_stalkers"/>
+    <TextView
+        android:id="@+id/drawer_stalkers_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="10dp"
+        android:background="#EEEEEE"
+        android:textColor="#000000"
+        android:text="Stalkers: "/>
+        <TextView
+            android:id="@+id/drawer_stalkers_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingRight="1dp"
+            android:paddingLeft="1dp"
+            android:background="#596A94"
+            android:textColor="#FFFFFF"
+            android:text=" 25 "/>
+</LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_me_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="#EEEEEE">
+        <ImageView
+            android:id="@+id/drawer_me_mode_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="#EEEEEE"
+            android:src="@drawable/drawer_me_mode"/>
+        <TextView
+            android:id="@+id/drawer_me_mode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:text="Me Mode"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_stalker_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="#EEEEEE">
+        <ImageView
+            android:id="@+id/drawer_stalker_mode_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="#EEEEEE"
+            android:src="@drawable/drawer_stalker_mode"/>
+        <TextView
+            android:id="@+id/drawer_stalker_mode_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:text="Stalker Mode"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/drawer_top_players"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:gravity="center"
+        android:background="#EEEEEE">
+        <ImageView
+            android:id="@+id/drawer_top_players_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:background="#EEEEEE"
+            android:src="@drawable/drawer_top_players"/>
+        <TextView
+            android:id="@+id/drawe_top_players_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:background="#EEEEEE"
+            android:textColor="#000000"
+            android:text="Top Players"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/drawer_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" >
+    </ListView>
+
+</LinearLayout>
